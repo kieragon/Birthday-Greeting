@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Cake</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="sky"><i style="--c:#ff5d8f;--x:8%;--t:18s"></i><i style="--c:#ffc145;--x:45%;--t:23s;--d:-9s"></i><i style="--c:#47c1bf;--x:82%;--t:20s;--d:-4s"></i></div>
+<canvas id="cf"></canvas>
+<main>
+<h1>Happy 23rd Birthday<span id="who"></span>!</h1>
+<svg id="cake" viewBox="0 0 400 340">
+<defs>
+<radialGradient id="g"><stop offset="0" stop-color="#ffd666"/><stop offset="1" stop-color="#ffd666" stop-opacity="0"/></radialGradient>
+<path id="n2" d="M-16 -44C-16 -56 16 -56 16 -42C16 -30 -2 -22 -16 -7L17 -7"/>
+<path id="n3" d="M-15 -49C-10 -60 15 -58 14 -45C13 -36 4 -33 -4 -33C6 -33 17 -30 16 -18C15 -4 -10 -3 -16 -13"/>
+</defs>
+<ellipse cx="200" cy="328" rx="186" ry="20" fill="#b9738f" opacity=".3"/>
+<ellipse cx="200" cy="322" rx="180" ry="18" fill="#fff" stroke="#f0c9d8" stroke-width="3"/>
+<g class="L" style="--i:0">
+<rect x="50" y="240" width="300" height="78" rx="16" fill="#f58fb0"/>
+<rect x="50" y="240" width="300" height="16" rx="8" fill="#fff6ec"/>
+<path class="d" d="M64 256H336" stroke-dasharray=".1 30.12"/>
+<path class="s" d="M66 285H334" stroke="#ffc145"/>
+<path class="s" d="M78 302H334" stroke="#fff"/>
+</g>
+<g class="L" style="--i:1">
+<rect x="90" y="170" width="220" height="74" rx="16" fill="#b79ae8"/>
+<rect x="90" y="170" width="220" height="16" rx="8" fill="#fff6ec"/>
+<path class="d" d="M104 186H296" stroke-dasharray=".1 31.9"/>
+<path class="s" d="M104 215H296" stroke="#ff5d8f"/>
+<path class="s" d="M116 232H296" stroke="#fff"/>
+</g>
+<g class="L" style="--i:2">
+<rect x="128" y="104" width="144" height="70" rx="16" fill="#7fd1c0"/>
+<rect x="128" y="104" width="144" height="16" rx="8" fill="#fff6ec"/>
+<path class="d" d="M142 120H258" stroke-dasharray=".1 28.9"/>
+<path class="s" d="M142 148H258" stroke="#ffc145"/>
+<path class="s" d="M154 163H258" stroke="#fff"/>
+<g transform="translate(170 108)">
+<use href="#n2" fill="none" stroke="#6c63ff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+<use href="#n2" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="13" stroke-dasharray="6 10"/>
+<path d="M0 -66V-59" stroke="#4e342e" stroke-width="1.6"/>
+<g transform="translate(0 -66)"><circle class="gl" cy="-12" r="24" fill="url(#g)"/><g class="f"><path d="M0 -26C9 -14 8 -3 0 0C-8 -3 -9 -14 0 -26" fill="#ffa726"/><path d="M0 -15C4 -9 4 -3 0 -1C-4 -3 -4 -9 0 -15" fill="#fff59d"/></g><path class="sm" d="M0 -4q-7 -8 0 -16q7 -8 0 -16"/></g>
+</g>
+<g transform="translate(230 108)">
+<use href="#n3" fill="none" stroke="#ffb300" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+<use href="#n3" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="13" stroke-dasharray="6 10"/>
+<path d="M0 -66V-59" stroke="#4e342e" stroke-width="1.6"/>
+<g transform="translate(0 -66)"><circle class="gl" cy="-12" r="24" fill="url(#g)"/><g class="f" style="animation-delay:.17s"><path d="M0 -26C9 -14 8 -3 0 0C-8 -3 -9 -14 0 -26" fill="#ffa726"/><path d="M0 -15C4 -9 4 -3 0 -1C-4 -3 -4 -9 0 -15" fill="#fff59d"/></g><path class="sm" d="M0 -4q-7 -8 0 -16q7 -8 0 -16"/></g>
+</g>
+</g>
+</svg>
+<p id="st">Make a wish, then blow them out.</p>
+<div><input id="name" maxlength="20" placeholder="Add a name"> <button id="btn">Blow out the candles</button></div>
+</main>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
